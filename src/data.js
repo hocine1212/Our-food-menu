@@ -68,7 +68,7 @@ const menu = [
     title: "quarantine buddy",
     category: "shakes",
     price: 16.99,
-    img: "/images/item-9.jpeg",
+    img: "/images/item-9.jpg",
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
 ];

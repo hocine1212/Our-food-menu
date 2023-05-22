@@ -3,18 +3,20 @@ import Categories from "./Categories";
 import Menu from "./Menu";
 import items from "./data";
 
-// extract only unique values and put them in an array
+// extract only unique values (delete repeated categories) and put them in an array
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
+console.log(allCategories);
 
 const App = () => {
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState(allCategories);
+
   const filterItems = (category) => {
     if (category === "all") {
       setMenuItems(items);
       return;
     }
-    const newItems = items.filter((item) => item.category === category);
+    const newItems = items.filter((menuItem) => menuItem.category === category);
     setMenuItems(newItems);
   };
 

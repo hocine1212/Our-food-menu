@@ -6,8 +6,8 @@ const Categories = ({ categories, filterItems }) => {
           <button
             type="button"
             key={index}
-            className="btn-filter"
             onClick={() => filterItems(category)}
+            className="btn-filter"
           >
             {category}
           </button>
